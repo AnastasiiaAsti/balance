@@ -3,6 +3,10 @@ body {
   font: 18px 'Josefin Sans', sans-serif , Helvetica, Arial, sans-serif;
 }
 
+.container > img {
+  width: 90vw;
+}
+
 li {
   list-style: none;
 }
