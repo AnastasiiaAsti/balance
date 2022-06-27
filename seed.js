@@ -6,7 +6,7 @@ const Asana = require('./models/asana')
 
 const data = require('./data')
 
-const p1 = Asana
+const p1 = Asana.deleteMany({})
 Promise.all([p1])
 .then(function(result) {
     console.log(result)

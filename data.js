@@ -7,11 +7,25 @@ exports.asanas = [
         description: 'Place your knees hip-width apart and inhale. Now bend forward and exhale as you lay your torso between your thighs and swing your hands forward.'
     },
     {
+        photosURLs: 'https://www.yogajournal.com/wp-content/uploads/2007/08/3yp_287_6641_gn_bjk.jpg?crop=535:301&width=1070&enable=upscale',
+        name: 'Extended Puppy Pose',
+        originName: 'A cross between Childs Pose and Downward-Facing Dog',
+        typeOfAsana: 'forwardbend',
+        description: 'Come onto all fours. See that your shoulders are above your wrists and your hips are above your knees. Walk your hands forward a few inches and curl your toes under. As you exhale, move your buttocks halfway back toward your heels. Keep your arms active; dont let your elbows touch the ground. Drop your forehead to the floor or to a blanket and let your neck relax. Keep a slight curve in your lower back. To feel a nice long stretch in your spine, press the hands down and stretch through the arms while pulling your hips back toward your heels.'
+    },
+    {
         photosURLs: 'https://www.yogajournal.com/wp-content/uploads/2022/02/Seated-Forward-Bend_Andrew-Clark.jpg?crop=535:301&width=1070&enable=upscale',
         name: 'Seated Forward Bend',
         originName: 'Paschimottanasana',
         typeOfAsana: 'forwardbend',
         description: 'Bring your arms straight out to the sides and up over your head, reaching toward the ceiling. Inhale and draw your spine up long. As you exhale, begin to come forward, hinging at your hips. On each exhale, deepen into your forward bend. Imagine your belly coming to rest on your thighs, rather than your nose coming to your knees. This will help you keep your spine long.'
+    },
+    {
+        photosURLs: 'https://www.yogajournal.com/wp-content/uploads/2007/08/CCD06147-scaled.jpg?crop=535:301&width=1070&enable=upscale',
+        name: 'Wide-Angled Seated Forward Bend',
+        originName: 'Upavistha Konasana',
+        typeOfAsana: 'forwardbend',
+        description: 'Open your legs out to the sides as wide as you are able.  Flex your feet and point the toes up.Press through your big toe mounds and root down with your femurs so the quadriceps are also facing the ceiling. Inhale and lengthen your spine; exhale and hinge at your hips, walking your hands forward and bringing your torso to the floor between your legs.Keep the back straight and avoid curving the spine.'
     },
     {
         photosURLs: 'https://www.yogajournal.com/wp-content/uploads/2021/11/Standing-Forward-Bend_Andrew-Clark_1.jpg?crop=535:301&width=1070&enable=upscale',
