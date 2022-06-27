@@ -25,7 +25,7 @@ const asanaSchema = new Schema({
     },
     typeOfAsana: {
         type: String,
-        emun: ['forward fold', 'backbend', 'twist']
+        emun: ['forwardbend', 'backbend', 'twist']
     },
     description: {
         type: String
