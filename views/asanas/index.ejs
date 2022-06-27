@@ -1,26 +1,15 @@
 <%- include('../partials/header') %>
     
-<div class="container parent">
-    <table class="list">
-        <thead>
-            <th></th>
-            <th>Name</th>
-            <th>Original Name</th>
-            <th>Type</th>
-            <th></th>
-        </thead>
-        <tbody>
-            <% asanas.forEach(function(asana) { %>
-                <tr>
-                    <td><%= asana.photosURLs %></td>
-                    <td><%= asana.name %></td>
-                    <td><%= asana.originName %></td>
-                    <td><%= asana.typeOfAsana %></td>
-                    <td><a href="/asanas/<%= asana._id %>">DESCRIPTION</a></td>
-                <tr>
+<div class="parent">
+    <% asanas.forEach(function(asana) { %>
+                <div class="col-md-4">
+                    <li><%= asana.photosURLs %></li>
+                    <li><%= asana.name %></li>
+                    <li><%= asana.originName %></li>
+                    <li><%= asana.typeOfAsana %></li>
+                    <li><a href="/asanas/<%= asana._id %>">DESCRIPTION</a></li>
+                </div>
                 <% }); %>
-        </tbody>
-    </table>
 </div>
 
 <%- include('../partials/footer') %>
