@@ -3,6 +3,7 @@ body {
   font: 18px 'Josefin Sans', sans-serif , Helvetica, Arial, sans-serif;
   margin: 0;
   height: 100vh;
+  line-height: 2rem;
 }
 
 .container > img {
@@ -32,4 +33,14 @@ a {
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   background-color: rgb(153, 237, 209);
-  }
+}
+
+.heading {
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.italic {
+  font-weight: 500;
+  font-style: italic;
+}
