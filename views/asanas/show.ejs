@@ -18,6 +18,26 @@
     <div><%= asana.description %></div>
 </div>
 
+<% if(user) { %>
+    <div class="container mt-5">
+        <form id="add-comment-form"method="POST" action="/asanas/<%= asana._id %>/comments">
+            <label>Comment:</label></br>
+            <textarea name="content" class="form-control" ></textarea></br>
+            <label>Rating:</label>
+            <select class="form-control" name="rating">
+            <option value="&#9996;">&#9996;</option>
+            <option value="&#128525">&#128525</option>
+            <option value="&#128293">&#128293</option>
+            <option value="&#128529">&#128529</option>
+            <option value="&#127798">&#127798</option>
+            <option value="&#129327">&#129327</option>
+            <option value="&#128149">&#128149</option>
+            </select><br>
+            <input type="submit" value="Add Review">
+        </form>
+    </div>
+<% } %>
+
 
 
 <%- include('../partials/footer') %>
