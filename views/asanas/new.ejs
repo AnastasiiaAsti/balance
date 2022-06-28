@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<div class="container p-3">
+    <form action="/asanas" method="POST">
+        <label>Image:</label>
+        <input class="form-control" type="text" name="photosURLs">
+        <br>
+        <label>Name:</label>
+        <input class="form-control" type="text" name="name">
+        <br>
+        <label>Type of Asana</label>
+        <select class="form-control" name="typeOfAsana">
+            <option value="forwardbend">forwardbend</option>
+            <option value="backbend">backbend</option>
+            <option value="twist">twist</option>
+        </select>
+        <br>
+        <label>Original Name:</label>
+        <input class="form-control" type="text" name="originName">
+        <br>
+        <label>Description:</label>
+        <textarea type="text" class="form-control" name="description" maxlength="1000"></textarea>
+        <input class="btn btn-color btn-lg mt-5 rounded-pill float-right" type="submit" value="Add Asana">
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
