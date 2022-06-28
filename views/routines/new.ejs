@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 
-<form id="add-routine-form" action="/routines" method="POST">
+
+<form id="add-routine-form" action="/routines/new" method="POST">
     <label>Title</label>
     <select name="name">
         <option value="Morning Routine">Morning Routine</option>
@@ -12,5 +13,6 @@
     <select name="twist"></select>
     <input type="submit" value="Add Routine">
 </form>
+<hr>
 
 <%- include('../partials/footer') %>
