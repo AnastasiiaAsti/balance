@@ -1,18 +1,29 @@
 <%- include('../partials/header') %>
 
 
-<form id="add-routine-form" action="/routines/new" method="POST">
-    <label>Title</label>
-    <select name="name">
-        <option value="Morning Routine">Morning Routine</option>
-        <option value="Evening Routine">Evening Routine</option>
-        <option value="Detox Routine">Detox Routine</option>
-    </select>
-    <select name="backbend"></select>
-    <select name="forwardbend"></select>
-    <select name="twist"></select>
-    <input type="submit" value="Add Routine">
-</form>
+<div class="container">
+    <form id="add-routine-form" action="/routines/new" method="POST">
+        <label>Name:</label>
+        <select name="name">
+            <option value="Morning">Morning Routine</option>
+            <option value="Evening">Evening Routine</option>
+            <option value="Detox">Detox Routine</option>
+        </select></br>
+        <label for="">Backbends:</label>
+        <select name="backbend">
+            <option value=""></option>
+        </select></br>
+        <label for="">Forwardbends:</label>
+        <select name="forwardbend">
+            <option value=""></option>
+        </select></br>
+        <label for="">Twists:</label>
+        <select name="twist">
+            <option value=""></option>
+        </select></br>
+        <input type="submit" value="Add Routine">
+    </form>
+</div>
 <hr>
 
 <%- include('../partials/footer') %>
