@@ -1,24 +1,24 @@
 <%- include('../partials/header') %>
 
 
-<div class="container">
+<div class="container col-lg-6">
     <form id="add-routine-form" action="/routines/new" method="POST">
         <label>Name:</label>
-        <select name="name">
+        <select class="form-control" name="name">
             <option value="Morning">Morning Routine</option>
             <option value="Evening">Evening Routine</option>
             <option value="Detox">Detox Routine</option>
         </select></br>
         <label for="">Backbends:</label>
-        <select name="backbend">
+        <select class="form-control" name="backbend">
             <option value=""></option>
         </select></br>
         <label for="">Forwardbends:</label>
-        <select name="forwardbend">
+        <select class="form-control" name="forwardbend">
             <option value=""></option>
         </select></br>
         <label for="">Twists:</label>
-        <select name="twist">
+        <select class="form-control" name="twist">
             <option value=""></option>
         </select></br>
         <input class="btn btn-color btn-lg mt-5 rounded-pill" type="submit" value="Add Routine">
