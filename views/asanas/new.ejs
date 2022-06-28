@@ -7,17 +7,10 @@
         <option value="Evening Routine">Evening Routine</option>
         <option value="Detox Routine">Detox Routine</option>
     </select>
-    <select name="backbends" id="">
-        <%- routines.map(r=>
-        <option value="${r._id}">${r.backbends}</option>).join('')
-    </select>
-    <select name="forwardbend" id="">
-        <%- routines.map(r=>
-        <option value="${r._id}">${r.forwardbend}</option>).join('')</select>
-    <select name="twists" id="">
-        <%- routines.map(r=>
-        <option value="${r._id}">${r.twists}</option>).join('')</select>
-        <input type="submit" value="Add Routine">
-        </form>
+    <select name="backbend"></select>
+    <select name="forwardbend"></select>
+    <select name="twist"></select>
+    <input type="submit" value="Add Routine">
+</form>
 
 <%- include('../partials/footer') %>
