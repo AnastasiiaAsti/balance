@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 
 const routineSchema = new Schema({
     name: {
-        enum: ['Morning Routine', 'Evening Routine', 'Detox Routine']
+        enum: ['Morning', 'Evening', 'Detox']
     },
-    backbends: [{
+    backbend: [{
         type: Schema.Types.ObjectId,
         ref: 'Asana',
     }],
@@ -14,7 +14,7 @@ const routineSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Asana'
     }],
-    twists: [{
+    twist: [{
         type: Schema.Types.ObjectId,
         ref: 'Asana'
     }],
