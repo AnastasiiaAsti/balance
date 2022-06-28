@@ -20,4 +20,4 @@ const routineSchema = new Schema({
     }],
 })
 
-module.exports = mongoose.model('Performer', performerSchema);
+module.exports = mongoose.model('Routine', routineSchema);
