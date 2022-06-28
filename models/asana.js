@@ -2,6 +2,22 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
+const commentSchema = new Schema({
+    content: {
+        type: String,
+        required: true
+    },
+    rating: {
+        type: String,
+        enum: ['&#9996;', '&#128525', '&#128293', '&#128529', '&#127798', '&#129327', '&#128149']
+    },
+    user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
+    userName: String,
+    userAvatar: String
+}, {
+    timestamps: true
+});
+
 const asanaSchema = new Schema({
     photosURLs: [
         {
@@ -30,7 +46,10 @@ const asanaSchema = new Schema({
     description: {
         type: String
     },
-})
+    comments: [commentSchema]
+}, {
+    timestamps: true    
+    })
 
 
 module.exports = mongoose.model('Asana', asanaSchema)

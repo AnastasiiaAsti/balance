@@ -14,9 +14,6 @@ function create(req, res) {
 
 function newRoutine(req, res) {
     Routine.find({}, function (err, routines) {
-        res.render('routines/new', {
-        title: 'Add Routine',
-            routines
-        });
+        res.render('routines/new', { title: 'Add Routine', routines });
     })
 }
