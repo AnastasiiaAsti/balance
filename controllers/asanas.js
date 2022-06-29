@@ -11,7 +11,7 @@ module.exports = {
 };
 
 function update(req, res) {
-    Asana.update(req.body, req.params.id)
+    Asana.save(req.body, req.params.id)
     res.redirect(`/asanas/${req.params.id}`)
 }
 
