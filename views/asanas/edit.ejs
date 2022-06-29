@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <div class="container">
-    <a href="/asanas/<%= asana.id %>" class="btn btn-color btn-sm rounded-pill float-right">Back To Description</a>
+    <a href="/asanas/<%= asana._id %>" class="btn btn-color btn-sm rounded-pill float-right">Back To Description</a>
 
     <h4>Update Asana</h4>
     <form action="/asanas/<%= asana.id %>?_method=PUT" method="POST" autocomplete="off">

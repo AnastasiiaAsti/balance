@@ -9,7 +9,7 @@
                         <li><a href="/asanas/<%= asana._id %>">DESCRIPTION</a></li>
                         <% if (user) { %>
                         <li><form action="/asanas/<%= asana._id %>?_method=DELETE" method="POST" id="deleteAsana">
-                            <button type="submit" form="deleteAsana" class="btn border-secondary btn-sm">X</button>
+                            <button type="submit" form="deleteAsana" class="btn border-secondary btn-circle">X</button>
                         </form></li>
                         <% } %>
                     </ul> 
