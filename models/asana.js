@@ -7,10 +7,7 @@ const commentSchema = new Schema({
         type: String,
         required: true
     },
-    rating: {
-        type: String,
-        enum: ['&#9996;', '&#128525', '&#128293', '&#128529', '&#127798', '&#129327', '&#128149']
-    },
+    rating: {type: Number, min: 1, max: 5, default: 5},
     user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
     userName: String,
     userAvatar: String

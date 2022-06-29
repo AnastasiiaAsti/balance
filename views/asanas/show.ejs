@@ -29,22 +29,20 @@
             <textarea name="content" class="form-control" ></textarea></br>
             <label>Rating:</label>
             <select class="form-control" name="rating">
-            <option value="&#9996;">&#9996;</option>
-            <option value="&#128525">&#128525</option>
-            <option value="&#128293">&#128293</option>
-            <option value="&#128529">&#128529</option>
-            <option value="&#127798">&#127798</option>
-            <option value="&#129327">&#129327</option>
-            <option value="&#128149">&#128149</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
             </select><br>
             <input class="btn btn-color btn-lg mt-5 rounded-pill" type="submit" value="Add Comment">
         </form>
     </div>
 <% } %>
 
-
+<hr>
 <% if (asana.comments.length) { %>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>User</th>
