@@ -2,8 +2,8 @@ const Asana = require('../models/asana');
 const Routine = require('../models/routine');
 
 module.exports = {
-    new: newRoutine,
-    create
+    create,
+    new: newRoutine
 }
 
 function create(req, res) {
@@ -12,8 +12,9 @@ function create(req, res) {
 });
 }
 
-function newRoutine(req, res) {
-    Routine.find({}, function (err, routines) {
-        res.render('routines/new', { title: 'Add Routine', routines });
-    })
+async function newRoutine(req, res) {
+        const forwardbends = await Asana.find({typeOfAsana: 'forwardbend'})
+        const backbends = await Asana.find({typeOfAsana: 'backbend'})
+        const twists = await Asana.find({typeOfAsana: 'twist'})
+        res.render('routines/new', { title: 'Add Routine', forwardbends, backbends, twists })
 }
