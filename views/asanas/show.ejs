@@ -3,7 +3,9 @@
 
 <div class="container">
     <div class="text-center"><img src="<%= asana.photosURLs %>" width="500px"></div>
-    <div><a href="/asanas/<%= asana.id%>/edit">Update Asana</a></div>
+    <% if (user) { %>
+    <div><a href="/asanas/<%= asana.id%>/edit" class="btn btn-color btn-sm mt-5 rounded-pill float-right">Update Asana</a></div>
+    <% } %>
     <div class="mt-5 heading">Name: </div>
     <div><%= asana.name %></div>
     <hr>

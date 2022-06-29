@@ -1,7 +1,9 @@
-<% - include('../partials/header') %>
+<%- include('../partials/header') %>
 
 <div class="container">
-    <h1>Update Asana</h1>
+    <a href="/asanas/<%= asana.id %>" class="btn btn-color btn-sm rounded-pill float-right">Back To Description</a>
+
+    <h4>Update Asana</h4>
     <form action="/asanas/<%= asana.id %>?_method=PUT" method="POST" autocomplete="off">
         <label>Image:</label>
         <input placeholder="Copy and paste image address" class="form-control" type="text" name="photosURLs">
