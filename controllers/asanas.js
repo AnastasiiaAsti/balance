@@ -5,8 +5,21 @@ module.exports = {
     show,
     new: newAsana,
     create,
-    delete: deleteAsana
+    delete: deleteAsana,
+    edit,
+    update
 };
+
+function update(req, res) {
+    Asana.update(req.body, req.params.id)
+    res.redirect(`/asanas/${req.params.id}`)
+}
+
+function edit(req, res) {
+    res.render('asanas/edit', {
+    asana: Asana.findOne(req.params.id)
+    });
+}
 
 function index(req, res) {
     console.log(req.user)
