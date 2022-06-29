@@ -10,9 +10,11 @@ function create(req, res) {
         req.body.user = req.user._id
         req.body.userName = req.user.name
         req.body.userAvatar = req.user.avatar
-        console.log(req.body)
+        //console.log(req.body)
         asana.comments.push(req.body)
-        asana.save(function(err) {
+        console.log(asana)
+        asana.save(function (err) {
+            console.log(err)
             res.redirect(`/asanas/${asana._id}`)
         })
     })
