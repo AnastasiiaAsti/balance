@@ -4,7 +4,8 @@ module.exports = {
     index,
     show,
     new: newAsana,
-    create
+    create,
+    delete: deleteAsana
 };
 
 function index(req, res) {
@@ -34,4 +35,10 @@ function create(req, res) {
         }
         res.redirect('/asanas');
     })
+}
+
+function deleteAsana(req, res) {
+    Asana.findByIdAndRemove(req.params.id, function(err, asana) {
+		res.redirect('/');
+	})
 }
