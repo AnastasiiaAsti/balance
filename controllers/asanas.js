@@ -12,14 +12,21 @@ module.exports = {
 
 
 function edit(req, res) {
-    res.render('asanas/edit', {
-    asana: Asana.findOne(req.params.id)
-    });
+    Asana.findById(req.params.id, function (err, asana) {
+        console.log(req.params.id)
+        res.render('asanas/edit', { asana });
+    })
 }
 
 function update(req, res) {
-    Asana.findOneAndUpdate(req.body, req.params.id)
-    res.redirect(`/asanas/${req.params.id}`)
+    Asana.findByIdAndUpdate(req.params.id,
+        req.body,
+        { new: true },
+        function (err, asana) {
+            if (err || !asana) return res.redirect('/asanas');
+            res.redirect(`/asanas/${req.params.id}`)
+        });
+    
 }
 
 function index(req, res) {
