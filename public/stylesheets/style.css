@@ -65,8 +65,9 @@ a {
 
 .review-user {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  filter: grayscale();
 }
 
 .review-user img {
