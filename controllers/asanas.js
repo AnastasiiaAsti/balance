@@ -10,15 +10,16 @@ module.exports = {
     update
 };
 
-function update(req, res) {
-    Asana.save(req.body, req.params.id)
-    res.redirect(`/asanas/${req.params.id}`)
-}
 
 function edit(req, res) {
     res.render('asanas/edit', {
     asana: Asana.findOne(req.params.id)
     });
+}
+
+function update(req, res) {
+    Asana.update(req.body, req.params.id)
+    res.redirect(`/asanas/${req.params.id}`)
 }
 
 function index(req, res) {
