@@ -1,6 +1,6 @@
 # Mongoose-Yoga
 
-link: https://mongoose-yoga.herokuapp.com/ 
+link: https://mongoose-yoga.herokuapp.com/  </br>
 project board: https://anastasiiaasti.atlassian.net/jira/software/projects/YA/boards/1
 
 <img width="1506" alt="Screen Shot 2022-06-29 at 12 11 04 PM" src="https://user-images.githubusercontent.com/97631462/176517317-1af560f4-96d4-46bd-9070-f415950fc552.png">
