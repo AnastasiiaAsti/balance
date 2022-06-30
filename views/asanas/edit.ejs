@@ -5,11 +5,8 @@
 
     <h4>Update Asana</h4>
     <form action="/asanas/<%= asana.id %>?_method=PUT" method="POST" autocomplete="off">
-        <label>Image:</label>
-        <input placeholder="Copy and paste image address" class="form-control" type="text" name="photosURLs">
-        <br>
         <label>Name:</label>
-        <input class="form-control" type="text" name="name">
+        <input class="form-control" name="name" value="<%= asana.name %>" type="text" name="name">
         <br>
         <label>Type of Asana</label>
         <select class="form-control" name="typeOfAsana">
@@ -19,10 +16,10 @@
         </select>
         <br>
         <label>Original Name:</label>
-        <input class="form-control" type="text" name="originName">
+        <input class="form-control" name="originName" value="<%= asana.originName %>" type="text">
         <br>
         <label>Description:</label>
-        <textarea type="text" class="form-control" name="description" maxlength="1000"></textarea>
+        <textarea type="text" class="form-control" name="description" value="<%= asana.description %>" maxlength="1000"></textarea>
         <input class="btn btn-color btn-lg mt-5 rounded-pill float-right" type="submit" value="Edit Asana">
     </form>
 </div>
