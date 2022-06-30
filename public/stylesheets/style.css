@@ -57,6 +57,7 @@ a {
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+  background-color: rgb(153, 237, 209);
 }
 
 .login img {
