@@ -8,7 +8,7 @@ project board: https://anastasiiaasti.atlassian.net/jira/software/projects/YA/bo
 
 # purpose:
 
-A responsive, full stack CRUD application that utilizes a node/mongodb backend. Let's you add, update and store asanas
+A full stack CRUD application that utilizes a node/mongodb backend. Let's you add, update and store asanas
 
 # Technologies Used
 
