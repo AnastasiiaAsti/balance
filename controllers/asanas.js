@@ -59,7 +59,11 @@ function create(req, res) {
 }
 
 function deleteAsana(req, res) {
-    Asana.findByIdAndRemove(req.params.id, function(err, asana) {
-		res.redirect('/');
+    Asana.findById(req.params.id,
+        function (err, asana) {
+        asana.remove();
+        asana.save(function (err) {
+            res.redirect('/asanas'); 
+        })
 	})
 }

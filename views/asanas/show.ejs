@@ -17,6 +17,11 @@
     <hr>
     <div class="heading">Description: </div>
     <div><%= asana.description %></div>
+    <% if (user) { %>
+        <div class="mt-4"><form action="/asanas/<%= asana._id %>?_method=DELETE" method="POST" id="deleteAsana">
+            <button type="submit" form="deleteAsana" class="btn border-secondary btn-circle">X</button>
+        </form></div>
+        <% } %>
 </div>
 
 <br><br>
