@@ -31,11 +31,13 @@ a {
 }
 
 .parent {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 3px;
-  grid-row-gap: 3px;
+  grid-row-gap: 3px; */
   background-color: rgb(153, 237, 209);
 }
 
