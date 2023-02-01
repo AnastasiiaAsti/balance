@@ -77,3 +77,13 @@ a {
   border-radius: 50%;
   height: 40px;
 }
+
+.body_dark {
+  background-color: rgb(88, 139, 122);
+  color: white;
+}
+
+.container_dark {
+  color: white;
+  background-color: rgb(67, 115, 99);
+}
