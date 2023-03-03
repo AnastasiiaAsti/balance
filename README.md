@@ -2,6 +2,10 @@
 
 link: https://mongoose-yoga.herokuapp.com/  </br>
 
+#UX UI design:
+
+https://www.figma.com/file/4Ps1dAb1d68rnR8JmaMzNv/Yoga-App?node-id=0%3A1&t=FFbnQFgnSxJNf4sk-1
+
 
 <img width="1506" alt="Screen Shot 2022-06-29 at 12 11 04 PM" src="https://user-images.githubusercontent.com/97631462/176517317-1af560f4-96d4-46bd-9070-f415950fc552.png">
 <img width="1505" alt="Screen Shot 2022-06-29 at 12 12 08 PM" src="https://user-images.githubusercontent.com/97631462/176517329-9493c38e-5094-464d-b0d2-f2b35b13b6a1.png">
