@@ -4,11 +4,12 @@
   --tan: #D0C7C5;
   --dark-grey: #676775;
   --peach: #CD9691;
+  --font: 18px 'Josefin Sans', sans-serif, Helvetica, Arial, sans-serif;
 }
 
 body {
   padding: 50px;
-  font: 18px 'Josefin Sans', sans-serif, Helvetica, Arial, sans-serif;
+  font: var(--font);
   margin: 0;
   height: 100vh;
   line-height: 2rem;
