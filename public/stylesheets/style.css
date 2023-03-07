@@ -8,11 +8,19 @@
 }
 
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: var(--font);
   margin: 0;
   height: 100vh;
   line-height: 2rem;
+}
+
+footer {
+  background-color: var(--light-grey);
+}
+
+footer a {
+  color: black;
 }
 
 .container>img {
