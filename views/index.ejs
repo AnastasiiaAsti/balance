@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+    <div class="container text-center justify-content-center">
+        <% if (!user) { %>
+            <img class="logo" src="images/logo.jpeg" alt="">
+            <% } else { %>
+                <div class="container row text-left">
+                    <div class="col-12">
+                        <h5>Favourites</h5>
+                        <div class="favourite row col-12">
+                            <div class="favourite_item col-3"></div>
+                            <div class="favourite_item col-3"></div>
+                            <div class="favourite_item col-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h5>Relevant content</h5>
+                        <div class="relevant_content"></div>
+                    </div>
+                </div>
+                <% } %>
+    </div>
+
+
+
+
+    <%- include('partials/footer') %>

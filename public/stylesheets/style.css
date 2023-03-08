@@ -13,7 +13,17 @@ body {
   margin: 0;
   height: 100vh;
   line-height: 2rem;
+  background-color: var(--tan);
 }
+
+.container {
+  min-height: 100vh;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
 
 footer {
   background-color: var(--light-grey);
