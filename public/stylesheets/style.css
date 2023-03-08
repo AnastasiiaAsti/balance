@@ -45,12 +45,9 @@ li {
   list-style: none;
 }
 
-a {
-  color: #00B7FF;
-}
 
 .btn-color {
-  background-color: rgb(153, 237, 209);
+  background-color: var(--peach);
 }
 
 
