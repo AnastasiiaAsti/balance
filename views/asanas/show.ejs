@@ -1,87 +1,41 @@
 <%- include('../partials/header') %>
 
 
-<div class="container">
-    <div class="text-center"><img class="img-fluid" src="<%= asana.photosURLs %>" width=""></div>
-    <% if (user) { %>
-    <div><a href="/asanas/<%= asana._id%>/edit" class="btn btn-color btn-sm mt-5 rounded-pill float-right">Update Asana</a></div>
-    <% } %>
-    <div class="mt-5 heading">Name: </div>
-    <div><%= asana.name %></div>
-    <hr>
-    <div class="heading">Original Name: </div>
-    <div><%= asana.originName %></div>
-    <hr>
-    <div class="heading">Type: </div>
-    <div><%= asana.typeOfAsana %></div>
-    <hr>
-    <div class="heading">Description: </div>
-    <div><%= asana.description %></div>
-    <% if (user) { %>
-        <div class="mt-4"><form action="/asanas/<%= asana._id %>?_method=DELETE" method="POST" id="deleteAsana">
-            <button type="submit" form="deleteAsana" class="btn border-secondary btn-circle">X</button>
-        </form></div>
-        <% } %>
-</div>
-
-<br><br>
-<h2 class="p-4 m-5">Comments</h2>
-
-<% if(user) { %>
-    <div class="container mt-5">
-        <form id="add-comment-form" method="POST" action="/asanas/<%= asana._id %>/comments">
-            <label>Comment:</label></br>
-            <textarea name="content" class="form-control" ></textarea></br>
-            <label>Rating:</label>
-            <select class="form-control" name="rating">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            </select><br>
-            <input class="btn btn-color btn-lg mt-5 rounded-pill" type="submit" value="Add Comment">
-        </form>
+    <div class="container">
+        <div class="text-center"><img class="img-fluid" src="<%= asana.photosURLs %>" width=""></div>
+        <% if (user) { %>
+            <div><a href="/asanas/<%= asana._id%>/edit"
+                    class="btn btn-color btn-sm mt-5 rounded-pill float-right">Update Asana</a></div>
+            <% } %>
+                <div class="mt-5 heading">Name: </div>
+                <div>
+                    <%= asana.name %>
+                </div>
+                <hr>
+                <div class="heading">Original Name: </div>
+                <div>
+                    <%= asana.originName %>
+                </div>
+                <hr>
+                <div class="heading">Type: </div>
+                <div>
+                    <%= asana.typeOfAsana %>
+                </div>
+                <hr>
+                <div class="heading">Description: </div>
+                <div>
+                    <%= asana.description %>
+                </div>
+                <% if (user) { %>
+                    <div class="mt-4">
+                        <form action="/asanas/<%= asana._id %>?_method=DELETE" method="POST" id="deleteAsana">
+                            <button type="submit" form="deleteAsana" class="btn border-secondary btn-circle">X</button>
+                        </form>
+                    </div>
+                    <% } %>
     </div>
-<% } %>
-
-<hr>
-<% if (asana.comments.length) { %>
-    <table class="table mt-5">
-        <thead>
-            <tr>
-                <th>User</th>
-                <th>Date</th>
-                <th>Comment</th>
-                <th>Rating</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-        <% let total = 0 %>
-        <% asana.comments.forEach(function(r) { %>
-            <% total += r.rating %>
-            <tr>
-            <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %></td>
-            <td><%= r.createdAt.toLocaleDateString() %></td>
-            <td><%= r.content %></td>
-            <td><%= r.rating %></td>
-            <td>
-                <% if (user && user._id.equals(r.user)) { %>
-                <form action="/comments/<%= r._id %>?_method=DELETE" method="POST" id="deleteComment">
-                    <button class="btn border-secondary btn-circle" type="submit">X</button>
-                </form>
-                <% } %>
-            </td>
-        </tr>
-        <% }); %>
-    </tbody>
-</table>
-<% } else { %>
-    <h5 class="p-4 m-5">No Comments Yet</h5>
-    <% } %>
 
 
 
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
