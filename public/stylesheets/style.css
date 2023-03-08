@@ -12,7 +12,6 @@
 }
 
 body {
-  /* padding: 50px; */
   font: var(--font);
   margin: 0;
   height: 100vh;
@@ -75,6 +74,8 @@ li {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  width: fit-content;
+  margin: auto;
 }
 
 .tab button {
