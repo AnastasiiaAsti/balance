@@ -7,6 +7,10 @@
   --font: 18px 'Josefin Sans', sans-serif, Helvetica, Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* padding: 50px; */
   font: var(--font);

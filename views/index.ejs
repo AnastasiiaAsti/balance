@@ -3,8 +3,10 @@
         <% if (!user) { %>
             <img class="logo" src="images/logo.jpeg" alt="">
             <% } else { %>
-                <div class="container row text-left">
-                    <div class="col-12">
+                <h4 class="text-left">Hello, <%= user.name %>
+                </h4>
+                <div class="container row text-left m-0">
+                    <div class="col-12 bg-light mb-5">
                         <h5>Favourites</h5>
                         <div class="favourite row col-12">
                             <div class="favourite_item col-3"></div>
@@ -12,7 +14,7 @@
                             <div class="favourite_item col-3"></div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 bg-light">
                         <h5>Relevant content</h5>
                         <div class="relevant_content"></div>
                     </div>
