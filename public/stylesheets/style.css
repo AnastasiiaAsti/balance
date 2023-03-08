@@ -20,8 +20,18 @@ body {
   background-color: var(--tan);
 }
 
+nav {
+  height: 5%;
+}
+
+main {
+  height: 85%;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
 .container {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .logo {
@@ -31,6 +41,7 @@ body {
 
 footer {
   background-color: var(--light-grey);
+  height: 10%;
 }
 
 footer a {
@@ -58,26 +69,52 @@ li {
   height: 34px;
 }
 
-.parent {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 3px;
-  grid-row-gap: 3px; */
-  background-color: rgb(153, 237, 209);
+/* tabs  */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-.heading {
-  font-weight: 700;
-  line-height: 2rem;
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.italic {
-  font-weight: 500;
-  font-style: italic;
+.tab button:hover {
+  background-color: #ddd;
 }
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* tabs END */
+
 
 .btn-circle {
   width: 30px;
