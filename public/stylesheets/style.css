@@ -72,15 +72,15 @@ body {
   border-radius: 50px;
 }
 
-nav {
-  height: 5%;
-}
-
-
 footer {
   background-color: var(--teal);
-  height: 10%;
-  padding: 0;
+}
+
+footer p {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 footer a {
@@ -90,6 +90,7 @@ footer a {
 footer a:hover {
   color: white;
   background-color: rgba(103, 103, 117, .4);
+  text-decoration: none;
 }
 
 .container>img {
