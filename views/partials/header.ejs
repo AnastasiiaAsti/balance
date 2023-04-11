@@ -10,23 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3d6dd12bad.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script defer src="/javascripts/main.js"></script>
-    <title>Yoga App</title>
+    <title>BALANCE</title>
 </head>
 
 <body class="mb-5">
     <nav class="navbar">
-        <a href="/asanas">ASANAS</a>
         <% if (user) { %>
-            <a href="/routines/new">CREATE ROUTINE</a>
-            <a href="/asanas/new">ADD ASANA</a>
-            <a href="/logout">LOGOUT</a>
+            <!-- <a href="/routines/new">CREATE ROUTINE</a>
+            <a href="/asanas/new">ADD ASANA</a> -->
+            <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
 
             <% } else { %>
-                <a href="/auth/google" class="login">LOG IN</a>
-
+                <a href="/auth/google" class="login"><i class="fa-solid fa-right-to-bracket"></i></a>
                 <% } %>
     </nav>
     <main>
-        <h1 class="m-5">Yoga App</h1>

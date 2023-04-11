@@ -2,12 +2,12 @@
 
 link: https://mongoose-yoga.herokuapp.com/  </br>
 
+
 A full stack CRUD application that utilizes a node/mongodb backend. Let's you add, update and store asanas. Currently redesigning UX/UI concepts. Utilizing mobile first approach
 
 # Previous design:
 <img width="492" alt="Screenshot 2023-04-10 at 2 55 01 PM" src="https://user-images.githubusercontent.com/97631462/231032455-5306723d-995c-434a-9e42-abc874aad3f7.png">
 <img width="492" alt="Screenshot 2023-04-10 at 2 54 28 PM" src="https://user-images.githubusercontent.com/97631462/231032461-b38f15ef-92a8-484b-a2ec-d2467dedc16d.png">
-
 
 
 <img width="1506" alt="Screen Shot 2022-06-29 at 12 11 04 PM" src="https://user-images.githubusercontent.com/97631462/176517317-1af560f4-96d4-46bd-9070-f415950fc552.png">
@@ -28,7 +28,6 @@ https://www.figma.com/file/4Ps1dAb1d68rnR8JmaMzNv/Yoga-App?node-id=0%3A1&t=FFbnQ
 
 <img width="1108" alt="Screenshot 2023-04-10 at 6 33 18 PM" src="https://user-images.githubusercontent.com/97631462/231032321-2641ee42-5ee4-4273-a15d-d647610c69fa.png">
 <img width="1108" alt="Screenshot 2023-04-10 at 6 33 21 PM" src="https://user-images.githubusercontent.com/97631462/231032330-40942cc2-11a4-4e1d-ad0c-f2ae96f33bfb.png">
-
 
 
 # project Board:

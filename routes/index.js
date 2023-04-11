@@ -3,8 +3,12 @@ var router = express.Router();
 const passport = require('passport');
 
 router.get('/', function(req, res, next) {
-  res.redirect('/asanas');
+  res.render('index');
 });
+
+// router.get('/', function(req, res, next) {
+//   res.redirect('/asanas');
+// });
 
 // Google OAuth login route
 router.get('/auth/google', passport.authenticate(
@@ -18,8 +22,8 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/asanas',
-    failureRedirect: '/asanas'
+    successRedirect: '/',
+    failureRedirect: '/'
   }
 ));
 
@@ -27,7 +31,7 @@ router.get('/oauth2callback', passport.authenticate(
 router.get('/logout', function(req, res) {
   req.logout(function (err) {
     if (err) console.log(err)
-    res.redirect('/asanas')
+    res.redirect('/')
   })
 })
 

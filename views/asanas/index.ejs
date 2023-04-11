@@ -1,19 +1,20 @@
 <%- include('../partials/header') %>
-
-    <div class="parent container col-lg-6 col-md-10 col-sm-12" id="parent">
+    <h4 class="text-center">Yoga space</h4>
+    <div class="tab mb-3">
+        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'asanas')">Asanas</button>
+        <button class="tablinks" onclick="openCity(event, 'routines')">Routines</button>
+    </div>
+    <div class="container col-12 tabcontent row justify-content-center m-auto" id="asanas">
         <% asanas.forEach(function(asana) { %>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <ul class="p-4">
-                    <li class="heading">
+            <div class="m-0 col-6">
+                <a href="/asanas/<%= asana._id %>">
+                    <img class="img-fluid" src="<%= asana.photosURLs %>" alt="">
+                    <p>
                         <%= asana.name %>
-                    </li>
-                    <li class="italic">
-                        <%= asana.typeOfAsana %>
-                    </li>
-                    <li><a href="/asanas/<%= asana._id %>">DESCRIPTION</a></li>
-                </ul>
+                    </p>
+                </a>
             </div>
             <% }); %>
     </div>
-
+    </main>
     <%- include('../partials/footer') %>
