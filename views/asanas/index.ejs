@@ -1,12 +1,12 @@
 <%- include('../partials/header') %>
     <h4 class="text-center">Yoga space</h4>
-    <div class="tab">
+    <div class="tab mb-3">
         <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'asanas')">Asanas</button>
         <button class="tablinks" onclick="openCity(event, 'routines')">Routines</button>
     </div>
-    <div class="container col-12 tabcontent" id="asanas">
+    <div class="container col-12 tabcontent row justify-content-center m-auto" id="asanas">
         <% asanas.forEach(function(asana) { %>
-            <div class="col-6 m-0">
+            <div class="m-0 col-6">
                 <a href="/asanas/<%= asana._id %>">
                     <img class="img-fluid" src="<%= asana.photosURLs %>" alt="">
                     <p>
