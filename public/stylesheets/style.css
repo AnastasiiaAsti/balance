@@ -66,10 +66,11 @@ body {
 }
 
 .upper-bg {
-  height: 95vh;
+  min-height: 95vh;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
+  scroll-behavior: smooth;
 }
 
 footer {
@@ -101,23 +102,29 @@ footer .nav-item a:hover {
   height: 25vh;
 }
 
-.related-content-section {}
-
-
-
-
-
-.container>img {
-  width: 80vw;
+.related-content,
+.favourite-section {
+  position: relative;
 }
+
+.related-content-item .item-description,
+.favourite-section-item .item-description {
+  background-color: rgba(103, 103, 117, .6);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+
 
 li {
   list-style: none;
-}
-
-
-.btn-color {
-  background-color: var(--peach);
 }
 
 
@@ -128,14 +135,31 @@ li {
   height: 34px;
 }
 
+/* asanas */
+
+.item-container {
+  position: relative;
+}
+
+.item-description {
+  background-color: rgba(103, 103, 117, .6);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
 /* tabs  */
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: var(--peach);
   width: fit-content;
   margin: auto;
+  border-radius: 50px;
 }
 
 .tab button {
@@ -147,11 +171,13 @@ li {
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(154, 127, 131);
+  color: white;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(154, 127, 131);
+  color: white;
 }
 
 .tabcontent {
@@ -176,7 +202,7 @@ li {
 
 /* tabs END */
 
-
+/* 
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -186,4 +212,4 @@ li {
   line-height: 1.428571429;
   border-radius: 15px;
   background-color: rgb(153, 237, 209);
-}
+} */

@@ -1,20 +1,27 @@
 <%- include('../partials/header') %>
-    <h4 class="text-center">Yoga space</h4>
-    <div class="tab mb-3">
-        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'asanas')">Asanas</button>
-        <button class="tablinks" onclick="openCity(event, 'routines')">Routines</button>
+    <div class="container upper-bg">
+        <div class="welcome-title">
+            <h5 class="text-left pt-5">Yoga space
+            </h5>
+        </div>
+        <div class="tab mb-3">
+            <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'asanas')">Asanas</button>
+            <button class="tablinks" onclick="openCity(event, 'routines')">Routines</button>
+        </div>
+        <div class="tabcontent row justify-content-center m-auto" id="asanas">
+            <% asanas.forEach(function(asana) { %>
+                <div class="item-container m-3">
+                    <a href="/asanas/<%= asana._id %>">
+                        <img class="img-fluid rounded" src="<%= asana.photosURLs %>" alt="">
+                        <p class="item-description text-center">
+                            <%= asana.name %>
+                        </p>
+                    </a>
+                </div>
+                <% }); %>
+        </div>
+
     </div>
-    <div class="container col-12 tabcontent row justify-content-center m-auto" id="asanas">
-        <% asanas.forEach(function(asana) { %>
-            <div class="m-0 col-6">
-                <a href="/asanas/<%= asana._id %>">
-                    <img class="img-fluid" src="<%= asana.photosURLs %>" alt="">
-                    <p>
-                        <%= asana.name %>
-                    </p>
-                </a>
-            </div>
-            <% }); %>
-    </div>
+
     </main>
     <%- include('../partials/footer') %>
