@@ -15,6 +15,7 @@ body {
   font: var(--font);
   margin: 0;
   padding: 0;
+  font-weight: 400;
   height: 95vh;
   width: 100vw;
   line-height: 2rem;
@@ -28,6 +29,18 @@ body {
   border: none;
   padding: 10px;
   color: black;
+}
+
+.btn-peach-fade {
+  background-color: #CD9691;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.peach-fade {
+  background-color: #CD9691;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .btn-peach:hover {
@@ -71,6 +84,16 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   scroll-behavior: smooth;
+}
+
+.upper-bg-2 {
+  min-height: 60vh;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(126, 126, 126, 0.6);
+  scroll-behavior: smooth;
+  color: white;
 }
 
 footer {
