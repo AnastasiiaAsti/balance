@@ -87,10 +87,15 @@ footer a {
   color: white;
 }
 
-footer a:hover {
+footer .nav-item:hover {
   color: white;
   background-color: rgba(103, 103, 117, .4);
+}
+
+footer .nav-item a:hover {
+  color: white;
   text-decoration: none;
+
 }
 
 .container>img {
