@@ -3,9 +3,13 @@
         <% if (!user) { %>
             <div class="container splash-page">
                 <div class="logo-section">
-                    <img class="logo" src="images/logo.jpeg" alt="">
+                    <img class="logo" src="images/logo.jpeg" width="200px" height="200px" alt="">
                 </div>
-                <div class="get-started-section"></div>
+                <div class="get-started-section d-flex flex-column justify-content-center">
+                    <h4 class="">Create health habits in a sustainable way</h4>
+                    <a href="#" class="btn-peach w-100 btn-rounded mt-5 mb-5">Get started</a>
+                    <h5>Already have an account?<span><a href="#"> Log In</a></span></h5>
+                </div>
             </div>
             <% } else { %>
                 <div class="upper-bg">
