@@ -95,8 +95,17 @@ footer .nav-item:hover {
 footer .nav-item a:hover {
   color: white;
   text-decoration: none;
-
 }
+
+.favourites-section {
+  height: 25vh;
+}
+
+.related-content-section {}
+
+
+
+
 
 .container>img {
   width: 80vw;

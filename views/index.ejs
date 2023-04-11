@@ -13,31 +13,35 @@
             </div>
             <% } else { %>
                 <div class="container upper-bg">
-                    <h5 class="text-left pt-5">Welcome back, <%= user.name %>
-                    </h5>
-                    <div class="favourites-section">
-                        <div class="favourite-section-item">
-                            <img src="" alt="">
+                    <div class="welcome-title">
+                        <h5 class="text-left pt-5">Welcome back, <%= user.name %>
+                        </h5>
+                    </div>
+                    <div class="section-title">
+                        <p class="text-left">Favourites</p>
+                    </div>
+                    <div class="favourites-section d-flex row">
+                        <div class="favourite-section-item col-6">
+                            <img src="images/plamk.png" alt="">
+                        </div>
+                        <div class="favourite-section-item col-6">
+                            <img src="images/asana-1.png" alt="">
                         </div>
                     </div>
-                    <div class="related-content-section">
-
+                    <div class="section-title">
+                        <p class="text-left">Related content</p>
                     </div>
-
-                    <!-- <div class="container row text-left m-0">
-                        <div class="col-12 bg-light mb-5">
-                            <h5>Favourites</h5>
-                            <div class="favourite row col-12">
-                                <div class="favourite_item col-3"></div>
-                                <div class="favourite_item col-3"></div>
-                                <div class="favourite_item col-3"></div>
-                            </div>
+                    <div class="related-content-section d-flex row">
+                        <div class="related-content-item col-6">
+                            <img src="images/related-1.png" alt="">
                         </div>
-                        <div class="col-12 bg-light">
-                            <h5>Relevant content</h5>
-                            <div class="relevant_content"></div>
+                        <div class="related-content-item col-6">
+                            <img src="images/related-2.png" alt="">
                         </div>
-                    </div> -->
+                        <!-- <div class="related-content-item col-12">
+                            <img src="images/related-3.png" alt="">
+                        </div> -->
+                    </div>
                 </div>
                 <% } %>
     </div>
