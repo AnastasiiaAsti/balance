@@ -3,7 +3,9 @@
 link: https://mongoose-yoga.herokuapp.com/  </br>
 
 
-A full stack CRUD application that utilizes a node/mongodb backend. Let's you add, update and store asanas. Currently redesigning UX/UI concepts. Utilizing mobile first approach
+A full stack CRUD application that utilizes a node/mongodb backend. Let's you add, update and store asanas. Currently redesigning UX/UI concepts. Utilizing mobile first approach.
+
+ "Balance" is a comprehensive and user-friendly application that brings the transformative practices of yoga and meditation directly to your fingertips. Whether you're a beginner or an experienced practitioner, Balance offers a wide range of classes, guided meditations, and resources to suit your needs and support you on your journey towards self-discovery.
 
 # Previous design:
 <img width="492" alt="Screenshot 2023-04-10 at 2 55 01 PM" src="https://user-images.githubusercontent.com/97631462/231032455-5306723d-995c-434a-9e42-abc874aad3f7.png">
