@@ -1,4 +1,4 @@
-# Balance yoga app
+# Balance yoga app (In development)
 
 <a href="https://mongoose-yoga.herokuapp.com/">Check out the project here</a>
 
